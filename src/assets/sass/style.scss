@@ -1,0 +1,56 @@
+@font-face {
+    font-family: "Pokemon Solid";
+    src: url("~@/assets/fonts/PokemonSolidNormal.eot");
+    src: url("~@/assets/fonts/PokemonSolidNormal.eot?#iefix") format("embedded-opentype"),
+        url("~@/assets/fonts/PokemonSolidNormal.woff2") format("woff2"),
+        url("~@/assets/fonts/PokemonSolidNormal.woff") format("woff"),
+        url("~@/assets/fonts/PokemonSolidNormal.ttf") format("truetype"),
+        url("~@/assets/fonts/PokemonSolidNormal.svg#PokemonSolidNormal") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Pokemon Hollow";
+    src: url("~@/assets/fonts/PokemonHollowNormal.eot");
+    src: url("~@/assets/fonts/PokemonHollowNormal.eot?#iefix") format("embedded-opentype"),
+        url("~@/assets/fonts/PokemonHollowNormal.woff2") format("woff2"),
+        url("~@/assets/fonts/PokemonHollowNormal.woff") format("woff"),
+        url("~@/assets/fonts/PokemonHollowNormal.ttf") format("truetype"),
+        url("~@/assets/fonts/PokemonHollowNormal.svg#PokemonHollowNormal") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+#home {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-danger {
+    background-color: rgba(255,0,0,1) !important;
+    color: white !important;
+    border: red 2px solid;
+    box-shadow: none !important;
+    border: red 2px solid;
+    border-radius: 50px;
+    box-shadow: none !important;
+}
+
+.btn-danger.focus, .btn-danger:focus, .btn-danger:hover, .btn-danger:active{
+    color: red !important;
+    background-color: white !important;
+    border: red 2px solid;
+    border-radius: 50px;
+    box-shadow: none !important;
+}
+
+
+.text-decoration-none {
+    text-decoration: none;
+    color: #FFFFFF;
+}
