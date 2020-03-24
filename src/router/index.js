@@ -11,7 +11,7 @@ const routes = [
     component: Home
   },
   {
-    path: '/pokemon/list',
+    path: '/list',
     name: 'Pokemon',
     component: Pokemon
     // route level code-splitting

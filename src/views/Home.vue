@@ -9,7 +9,7 @@
         <router-link to="/"><img src="@/assets/img/ash-pikachu.png" alt="Ash and Pikachu"></router-link>
       </div>
       <div class="col-md-12 mx-auto">
-        <router-link to="/pokemon/list" class="btn btn-danger text-uppercase font-weight-bold text-decoration-none">pokebola, vai!</router-link>
+        <router-link to="/list" class="btn btn-danger text-uppercase font-weight-bold text-decoration-none">pokebola, vai!</router-link>
       </div>
     </div>
   </section>

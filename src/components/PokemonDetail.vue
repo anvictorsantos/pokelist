@@ -35,10 +35,10 @@
           </div>
         </div>
       </div>
-      <h2 v-else>The pokemon was not found</h2>
+      <p v-else>The pokemon was not found</p>
       <button class="close" @click="closeDetail">close</button>
     </div>
-    <i v-else class="fas fa-spinner fa-pulse"></i>
+    <i v-else class="fa fa-spinner"></i>
   </div>
 </template>
 
@@ -180,5 +180,14 @@
       font-size: 2rem;
       color: #efefef;
     }
+  }
+  /* Define an animation behavior */
+  @keyframes spinner {
+    to { transform: rotate(360deg); }
+  }
+  /* This is the class name given by the Font Awesome component when icon contains 'spinner' */
+  .fa-spinner {
+    /* Apply 'spinner' keyframes looping once every second (1s)  */
+    animation: spinner 1s linear infinite;
   }
 </style>

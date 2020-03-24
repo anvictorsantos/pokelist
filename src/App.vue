@@ -24,7 +24,7 @@ export default {
 <style lang="scss">
 #app {
   background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 50%, rgba(255,255,255,1) 50%);
-  font-family: 'Acme';
+  font-family: 'Acme', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-display: swap;

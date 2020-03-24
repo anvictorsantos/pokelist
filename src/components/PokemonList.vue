@@ -4,10 +4,10 @@
     :key="'poke'+index"
     @click="setPokemonUrl(pokemon.url)">
       <img :src="imageUrl + pokemon.id + '.png'" width="96" height="96" alt="">
-      <p>{{ pokemon.name }}</p>
+      <p class="font-weight-bold">{{ pokemon.name }}</p>
     </article>
     <div id="scroll-trigger" ref="infinitescrolltrigger">
-      <i class="fas fa-spinner fa-spin"></i>
+      <i class="fa fa-spinner"></i>
     </div>
   </div>
 </template>
@@ -102,5 +102,14 @@
     height: 150px;
     font-size: 2rem;
     color: #efefef;
+  }
+  /* Define an animation behavior */
+  @keyframes spinner {
+    to { transform: rotate(360deg); }
+  }
+  /* This is the class name given by the Font Awesome component when icon contains 'spinner' */
+  .fa-spinner {
+    /* Apply 'spinner' keyframes looping once every second (1s)  */
+    animation: spinner 1s linear infinite;
   }
 </style>

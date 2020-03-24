@@ -1,9 +1,9 @@
 <template>
   <div class="searchbar">
     <form @submit.prevent="setPokemonUrl">
-      <input type="text" v-model="searchvalue">
+      <input type="text" ref="fileInput" v-model="searchvalue" onfocus="this.placeholder=''" :placeholder="[[ place ]]"><i class="fa fa-search"></i>
     </form>
-    <i class="fab fa-searchengin" @click="setPokemonUrl"></i>
+    <i class="fa fa-search" @click="setPokemonUrl"></i>
   </div>
 </template>
 
@@ -15,18 +15,27 @@
     data: () => {
       return {
         searchvalue: '',
+        place: 'Choose your pokémon'
       }
     },
     methods: {
-      setPokemonUrl() {
-        if(this.searchvalue !== '')
+      setPokemonUrl: function(event) {
+        if(this.searchvalue !== '') {
+          this.searchvalue = this.searchvalue.toLowerCase().trim();
           this.$emit('setPokemonUrl', this.apiUrl + this.searchvalue);
+          event.target.reset();
+          this.place = 'Choose your pokémon';
+        }
       }
     }
   }
 </script>
 
 <style lang="scss" scoped>
+  .fa-search:before {
+    color: red;
+    content: "\f002";
+  }
   .searchbar {
     position: relative;
     width: 100%;
