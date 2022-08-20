@@ -1,23 +1,18 @@
 <template>
-    <header>
-        <nav class="navbar">
-        <a class="navbar-brand mx-auto img-fluid" href="/">
-          <img src="@/assets/img/logo.png" alt="Pokemon" height="94" width="256">
-        </a>
-        </nav>
-    </header>
+  <nav class="navbar">
+    <a class="navbar-brand mx-auto img-fluid" href="/">
+      <img src="@/assets/img/logo.png" alt="Pokemon" height="94" width="256" />
+    </a>
+  </nav>
 </template>
 
 <script>
 export default {
-  name: 'Header',
+  name: "HeaderComponent",
   props: {
-    msg: String
-  }
-}
+    msg: String,
+  },
+};
 </script>
 
-
-<style>
-
-</style>
+<style></style>
