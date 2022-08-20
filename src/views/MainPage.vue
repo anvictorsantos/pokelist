@@ -4,12 +4,20 @@
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div> -->
   <section id="home">
-    <div class="col-md-12 justify-content-center align-items-center text-center">
+    <div
+      class="col-md-12 justify-content-center align-items-center text-center"
+    >
       <div class="col-md-12 mx-auto">
-        <router-link to="/"><img src="@/assets/img/ash-pikachu.png" alt="Ash and Pikachu"></router-link>
+        <router-link to="/"
+          ><img src="@/assets/img/ash-pikachu.png" alt="Ash and Pikachu"
+        /></router-link>
       </div>
       <div class="col-md-12 mx-auto">
-        <router-link to="/list" class="btn btn-danger text-uppercase font-weight-bold text-decoration-none">pokebola, vai!</router-link>
+        <router-link
+          to="/list"
+          class="btn btn-danger text-uppercase font-weight-bold text-decoration-none"
+          >pokebola, vai!</router-link
+        >
       </div>
     </div>
   </section>
@@ -20,11 +28,10 @@
 // import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
-  name: 'Home'
-}
-
+  name: "MainPage",
+};
 </script>
 
 <style lang="scss" scoped>
-  @import "@/assets/sass/style.scss";
+@import "@/assets/sass/style.scss";
 </style>
