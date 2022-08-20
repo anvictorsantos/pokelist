@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import Pokemon from '../views/Pokemon.vue'
+import PokemonDex from '../views/PokemonDex.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -12,12 +12,12 @@ const routes = [
   },
   {
     path: '/list',
-    name: 'Pokemon',
-    component: Pokemon
+    name: 'PokemonDex',
+    component: PokemonDex
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    // component: () => import(/* webpackChunkName: "about" */ '../views/Pokemon.vue')
+    // component: () => import(/* webpackChunkName: "about" */ '../views/PokemonDex.vue')
   }
 ]
 
